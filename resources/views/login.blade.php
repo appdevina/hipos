@@ -36,32 +36,46 @@
     <link rel="stylesheet" type="text/css" href="../assets/css/responsive.css">
   </head>
   <body>
-    <!-- page-wrapper Start-->
-    <div class="page-wrapper compact-wrapper" id="pageWrapper">
-      <!-- NAVBAR -->
-      @include('layouts.navbar')
-      <!-- END NAVBAR -->
-
-      <!-- Page Body Start-->
-      <div class="page-body-wrapper sidebar-icon">
-
-        <!-- LEFT SIDEBAR -->
-        @include('layouts.sidebar')
-        <!-- END LEFT SIDEBAR -->
-        <!-- MAIN -->
-        @yield('content')
-        <!-- END MAIN -->
-        <div class="clearfix"></div>
-        <footer>
-          <div class="container-fluid">
-            <p class="copyright">&copy; 2023 <a href="#">hi.thisisvinn</a>. All Rights Reserved.</p>
-          </div>
-        </footer>
+    <!-- Loader starts-->
+    <div class="loader-wrapper">
+      <div class="theme-loader">    
+        <div class="loader-p"></div>
       </div>
     </div>
-    <!-- END WRAPPER -->
-    
-    <!-- JAVASCRIPT -->
+    <!-- Loader ends-->
+    <!-- page-wrapper Start-->
+    <section>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xl-7"><img class="bg-img-cover bg-center" src="../assets/images/login/2.jpg" alt="looginpage"></div>
+          <div class="col-xl-5 p-0">
+            <div class="login-card">
+              <form class="theme-form login-form" action="/login" method="POST">
+                {{csrf_field()}}
+                <h4>Login</h4>
+                <h6>Welcome back! Log in to your account.</h6>
+                <div class="form-group">
+                  <label>Username</label>
+                  <div class="input-group"><span class="input-group-text"><i class="icon-user"></i></span>
+                    <input name="username" class="form-control" type="text" required="" placeholder="hellouser">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>Password</label>
+                  <div class="input-group"><span class="input-group-text"><i class="icon-lock"></i></span>
+                    <input name="password" class="form-control" type="password" required="" placeholder="*********">
+                    {{-- <div class="show-hide"><span class="show">                         </span></div> --}}
+                  </div>
+                </div>
+                <div class="form-group d-grid gap-2">
+                  <button class="btn btn-primary btn-block" type="submit">Sign in</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- latest jquery-->
     <script src="../assets/js/jquery-3.5.1.min.js"></script>
     <!-- feather icon js-->

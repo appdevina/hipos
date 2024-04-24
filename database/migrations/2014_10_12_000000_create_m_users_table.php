@@ -21,6 +21,7 @@ return new class extends Migration
             $table->string('phone')->nullable();
             $table->string('email')->nullable();
             $table->timestamp('email_verified_at')->nullable();
+            $table->foreignId('role_id')->nullable();
             $table->foreignId('division_id')->nullable();
             $table->integer('manager_id')->nullable();
             $table->string('profile_picture')->nullable();

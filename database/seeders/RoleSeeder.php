@@ -6,28 +6,31 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
-class DivisionSeeder extends Seeder
+class RoleSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        DB::table('m_divisions')->insert([
+        DB::table('m_roles')->insert([
         [
             'name' => 'Admin',
         ],
         [
-            'name' => 'Finance',
+            'name' => 'CEO',
         ],
         [
-            'name' => 'Sales',
+            'name' => 'General Manager',
         ],
         [
-            'name' => 'Supply Chain',
+            'name' => 'Manager',
         ],
         [
-            'name' => 'Warehouse',
+            'name' => 'Supervisor',
+        ],
+        [
+            'name' => 'Staff',
         ],
     ]);
     }
