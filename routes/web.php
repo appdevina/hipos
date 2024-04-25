@@ -22,6 +22,7 @@ Route::get('/', function () {
 #LOGIN
 Route::get('login', [AuthController::class, 'index'])->name('login');
 Route::post('login', [AuthController::class,'process'])->name('process');
+Route::get('logout', [AuthController::class, 'logout'])->name('logout');
 
 Route::group(['middleware' => ['auth']], function () {
     Route::group(['middleware' => ['login:1']], function () {
