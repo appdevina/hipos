@@ -12,10 +12,6 @@
     <title>hipos</title>
     <!-- Google font-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="../../fonts.googleapis.com/css2.css" rel="stylesheet">
-    <link href="../../fonts.googleapis.com/css2_2.css" rel="stylesheet">
-    <link href="../../fonts.googleapis.com/css2_3.css" rel="stylesheet">
-    <!-- Font Awesome-->
     <link rel="stylesheet" type="text/css" href="../assets/css/fontawesome.css">
     <!-- ico-font-->
     <link rel="stylesheet" type="text/css" href="../assets/css/icofont.css">

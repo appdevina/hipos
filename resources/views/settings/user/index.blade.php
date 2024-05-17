@@ -47,27 +47,19 @@
                         <h5>Users</h5>
                     </div>
                     <div class="card-body">
-                        <button class="btn btn-primary mb-3" id="addRow">Add new row</button>
                         <div class="table-responsive">
-                            <table class="display" id="API-1">
+                            <table class="display" id="dt_user">
                                 <thead>
                                     <tr>
-                                        <th>Column 1</th>
-                                        <th>Column 2</th>
-                                        <th>Column 3</th>
-                                        <th>Column 4</th>
-                                        <th>Column 5</th>
+                                        <th>NIK</th>
+                                        <th>Name</th>
+                                        <th>Username</th>
+                                        <th>Role</th>
+                                        <th>Division</th>
                                     </tr>
                                 </thead>
                                 <tfoot>
-                                    <tr>
-                                        <th>Column 1</th>
-                                        <th>Column 2</th>
-                                        <th>Column 3</th>
-                                        <th>Column 4</th>
-                                        <th>Column 5</th>
-                                    </tr>
-                                </tfoot>
+                            </tfoot>
                             </table>
                         </div>
                     </div>
@@ -82,12 +74,5 @@
 @endsection
 
 @section('js')
-    <script src="{{ mix('views/settings/user/user.js') }}"></script>
-
-    {{-- <script type="text/javascript">
-    
-        $(document).ready(function() {
-            console.log("halooo");
-        });
-    </script> --}}
+    @vite('resources/views/settings/user/user.js')
 @endsection
