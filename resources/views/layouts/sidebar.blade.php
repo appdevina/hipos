@@ -43,14 +43,9 @@
                             <li><a href="chart-widget.html">Chart</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown"><a class="nav-link menu-title" href="javascript:void(0)"><i data-feather="layout"></i><span>Page layout</span></a>
+                    <li class="dropdown"><a class="nav-link menu-title" href="javascript:void(0)"><i data-feather="settings"></i><span>Settings</span></a>
                         <ul class="nav-submenu menu-content">
-                            <li><a href="box-layout.html">Boxed</a></li>
-                            <li><a href="layout-rtl.html">RTL</a></li>
-                            <li><a href="layout-dark.html">Dark</a></li>
-                            <li><a href="footer-light.html">Footer Light</a></li>
-                            <li><a href="footer-dark.html">Footer Dark</a></li>
-                            <li><a href="footer-fixed.html">Footer Fixed</a></li>
+                            <li><a href="/user">Users</a></li>
                         </ul>
                     </li>
                 </ul>

@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -27,5 +28,8 @@ Route::get('logout', [AuthController::class, 'logout'])->name('logout');
 Route::group(['middleware' => ['auth']], function () {
     Route::group(['middleware' => ['login:1']], function () {
         Route::resource('dashboard', DashController::class);
+
+        #USERS
+        Route::get('user', [UserController::class, 'index']);
     });
 });

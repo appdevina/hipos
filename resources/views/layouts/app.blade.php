@@ -26,6 +26,7 @@
     <!-- Feather icon-->
     <link rel="stylesheet" type="text/css" href="../assets/css/feather-icon.css">
     <!-- Plugins css start-->
+    <link rel="stylesheet" type="text/css" href="http://admin.pixelstrap.com/viho/assets/css/datatables.css">
     <!-- Plugins css Ends-->
     <!-- Bootstrap css-->
     <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.css">
@@ -36,6 +37,13 @@
     <link rel="stylesheet" type="text/css" href="../assets/css/responsive.css">
   </head>
   <body>
+    <!-- Loader starts-->
+    <div class="loader-wrapper">
+      <div class="theme-loader">
+          <div class="loader-p"></div>
+      </div>
+  </div>
+  <!-- Loader ends-->
     <!-- page-wrapper Start-->
     <div class="page-wrapper compact-wrapper" id="pageWrapper">
       <!-- NAVBAR -->
@@ -74,10 +82,17 @@
     <script src="../assets/js/bootstrap/popper.min.js"></script>
     <script src="../assets/js/bootstrap/bootstrap.min.js"></script>
     <!-- Plugins JS start-->
+    <script src="http://admin.pixelstrap.com/viho/assets/js/datatable/datatables/jquery.dataTables.min.js"></script>
+    <script src="http://admin.pixelstrap.com/viho/assets/js/datatable/datatables/datatable.custom.js"></script>
+    <script src="http://admin.pixelstrap.com/viho/assets/js/tooltip-init.js"></script>
     <!-- Plugins JS Ends-->
     <!-- Theme js-->
     <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/theme-customizer/customizer.js"></script>
     <!-- login js-->
     <!-- Plugin used-->
+
+    {{-- CUSTOM JS --}}
+    @yield('js')
   </body>
 </html>
