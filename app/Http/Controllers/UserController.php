@@ -14,7 +14,9 @@ class UserController extends Controller
      */
     public function index()
     {
-        return view('settings/user/index');
+        return view('settings.user.index',[
+            'js' => 'settings/user/js',
+        ]);
     }
 
     function getUsers(Request $request) {

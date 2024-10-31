@@ -74,5 +74,6 @@
 @endsection
 
 @section('js')
-    @vite('resources/views/settings/user/user.js')
+    {{-- @vite('resources/views/settings/user/user.js') --}}
+    {{-- <script src="{{ asset('assets/js/app/settings/user.js') }}"></script> --}}
 @endsection

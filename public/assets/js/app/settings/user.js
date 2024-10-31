@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    console.log("halo dari user.js");
+    console.log("halo dari asset user.js");
     dt_user();
 
     function dt_user() {

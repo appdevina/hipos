@@ -90,5 +90,9 @@
 
     {{-- CUSTOM JS --}}
     @yield('js')
+
+    @isset($js)
+      @include($js)
+  @endisset
   </body>
 </html>
