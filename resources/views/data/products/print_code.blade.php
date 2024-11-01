@@ -1,8 +1,5 @@
 @extends('layouts.app')
 
-@section('css')
-@endsection
-
 @section('content')
 <div class="page-body dashboard-2-main">
     <!-- Container-fluid starts-->
@@ -50,20 +47,21 @@
                         <h5><?= $title ?></h5>
                     </div>
                     <div class="card-body">
-                        <div class="table-responsive">
-                            <table class="display" id="dt_products">
-                                <thead>
-                                    <tr>
-                                        <th>Name</th>
-                                        <th>Code</th>
-                                        <th>Price</th>
-                                        <th>Stock</th>
-                                    </tr>
-                                </thead>
-                                <tfoot>
-                            </tfoot>
-                            </table>
-                        </div>
+                        <p>Products:</p>
+                        <input type="text" id="product-search" placeholder="Search for products..." class="form-control">
+                        <table class="table mt-3" id="product-table">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Product Code</th>
+                                    <th>Price</th>
+                                    <th>Stock</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Results will be dynamically added here -->
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>

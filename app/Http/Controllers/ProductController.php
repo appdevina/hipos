@@ -29,4 +29,36 @@ class ProductController extends Controller
             ->rawColumns(['action'])
             ->make(true);
     }
+
+    public function printCode()
+    {
+        return view('data.products.print_code',[
+            'js' => 'data.products.js',
+            'title' => 'Print Barcode'
+        ]);
+    }
+
+    public function search(Request $request)
+    {
+        $search = $request->get('term');
+        
+        $products = Product::where('name', 'LIKE', '%' . $search . '%')
+                           ->orWhere('product_code', 'LIKE', '%' . $search . '%')
+                           ->limit(10)
+                           ->get();
+
+        $result = [];
+        foreach ($products as $product) {
+            $result[] = [
+                'id' => $product->id,
+                'label' => $product->name . ' (' . $product->product_code . ')',
+                'name' => $product->name,
+                'product_code' => $product->product_code,
+                'price' => $product->price,
+                'stock' => $product->stock,
+            ];
+        }
+
+        return response()->json($result);
+    }
 }

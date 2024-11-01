@@ -40,6 +40,7 @@
                     <li class="dropdown"><a class="nav-link menu-title" href="javascript:void(0)"><i data-feather="package"></i><span>Products</span></a>
                         <ul class="nav-submenu menu-content">
                             <li><a href="/products">Products</a></li>
+                            <li><a href="/print_code">Print Barcode</a></li>
                         </ul>
                     </li>
                     <li class="dropdown"><a class="nav-link menu-title" href="javascript:void(0)"><i data-feather="settings"></i><span>Settings</span></a>

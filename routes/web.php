@@ -37,5 +37,7 @@ Route::group(['middleware' => ['auth']], function () {
         ##PRODUCTS
         Route::get('products', [ProductController::class, 'index']);
         Route::get('products/list', [ProductController::class, 'getProducts']);
+        Route::get('print_code', [ProductController::class, 'printCode']);
+        Route::get('/product-search', [ProductController::class, 'search'])->name('product.search');
     });
 });
