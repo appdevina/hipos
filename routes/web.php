@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashController;
+use App\Http\Controllers\ProductController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -30,7 +31,11 @@ Route::group(['middleware' => ['auth']], function () {
         Route::resource('dashboard', DashController::class);
 
         #USERS
-        Route::get('user', [UserController::class, 'index']);
+        Route::get('users', [UserController::class, 'index']);
         Route::get('users/list', [UserController::class, 'getUsers']);
+
+        ##PRODUCTS
+        Route::get('products', [ProductController::class, 'index']);
+        Route::get('products/list', [ProductController::class, 'getProducts']);
     });
 });

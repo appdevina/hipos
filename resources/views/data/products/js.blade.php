@@ -1,10 +1,10 @@
 <script>
     $(document).ready(function() {
         console.log("halo dari js.blade");
-        dt_user();
+        dt_products();
 
-        function dt_user() {
-            $("#dt_user").DataTable({
+        function dt_products() {
+            $("#dt_products").DataTable({
                 destroy: true,
                 lengthChange: false,
                 searching: true,
@@ -26,23 +26,20 @@
                         window.location.protocol +
                         "//" +
                         window.location.hostname +
-                        "/users/list",
+                        "/products/list",
                 },
                 columns: [
                     {
-                        data: "nik",
+                        data: "name",
                     },
                     {
-                        data: "first_name",
+                        data: "product_code",
                     },
                     {
-                        data: "username",
+                        data: "price",
                     },
                     {
-                        data: "role",
-                    },
-                    {
-                        data: "division",
+                        data: "stock",
                     },
                     // {
                     //     render: function(data, type, row, meta) {

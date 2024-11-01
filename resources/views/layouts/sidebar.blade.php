@@ -37,15 +37,14 @@
                             <li><a href="dashboard-02.html">Ecommerce</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown"><a class="nav-link menu-title" href="javascript:void(0)"><i data-feather="airplay"></i><span>Widgets</span></a>
+                    <li class="dropdown"><a class="nav-link menu-title" href="javascript:void(0)"><i data-feather="package"></i><span>Products</span></a>
                         <ul class="nav-submenu menu-content">
-                            <li><a href="general-widget.html">General</a></li>
-                            <li><a href="chart-widget.html">Chart</a></li>
+                            <li><a href="/products">Products</a></li>
                         </ul>
                     </li>
                     <li class="dropdown"><a class="nav-link menu-title" href="javascript:void(0)"><i data-feather="settings"></i><span>Settings</span></a>
                         <ul class="nav-submenu menu-content">
-                            <li><a href="/user">Users</a></li>
+                            <li><a href="/users">Users</a></li>
                         </ul>
                     </li>
                 </ul>

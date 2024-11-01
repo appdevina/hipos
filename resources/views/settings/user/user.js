@@ -3,7 +3,6 @@ $(document).ready(function() {
     dt_user();
 
     function dt_user() {
-        // Datatable design
         $("#dt_user").DataTable({
             destroy: true,
             lengthChange: false,
