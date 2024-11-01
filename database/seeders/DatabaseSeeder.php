@@ -23,6 +23,11 @@ class DatabaseSeeder extends Seeder
             DivisionSeeder::class,
             RoleSeeder::class,
             UserSeeder::class,
+
+            BrandsSeeder::class,
+            ProductCategoriesSeeder::class,
+            ProductSeeder::class,
+            UnitsSeeder::class,
         ]);
     }
 }
